@@ -10,10 +10,11 @@ import spacy
 import nltk
 from nltk.corpus import stopwords
 from help_functions import *
+import en_core_web_sm
 
 app = Flask(__name__)
 
-nlp = spacy.load('en_core_web_lg')
+nlp = en_core_web_sm.load()
 emoji_symb2emb_dic = joblib.load('avg_glove_embedding.pkl')
 glove_lookup = joblib.load('glove_lookup')
 

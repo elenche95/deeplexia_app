@@ -9,8 +9,9 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from numpy.core._exceptions import UFuncTypeError
+import en_core_web_sm
 
-nlp = spacy.load('en_core_web_lg')
+nlp = en_core_web_sm.load()
 porter = PorterStemmer()
 emoji_symb2emb_dic = joblib.load('avg_glove_embedding.pkl')
 glove_lookup = joblib.load('glove_lookup')
