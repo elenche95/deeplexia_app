@@ -22,4 +22,5 @@ urllib3==1.25.10
 tensorflow_datasets
 flask
 spacy
+nltk
 prettytable
