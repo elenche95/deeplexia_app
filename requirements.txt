@@ -10,3 +10,4 @@ flask
 spacy
 nltk
 spacy-nightly
+gunicorn
