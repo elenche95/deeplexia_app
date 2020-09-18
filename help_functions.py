@@ -8,9 +8,9 @@ from numpy.core._exceptions import UFuncTypeError
 import en_core_web_sm
 import gdown
 
-url = 'https://drive.google.com/uc?id=1NiEvwVxu9eDYF7m5AdEZV0gopaqRB-7u&export=download'
-output = 'glove_lookup'
-gdown.download(url, output)
+#url = 'https://drive.google.com/uc?id=1NiEvwVxu9eDYF7m5AdEZV0gopaqRB-7u&export=download'
+#output = 'glove_lookup'
+#gdown.download(url, output)
 
 nlp = en_core_web_sm.load()
 porter = PorterStemmer()
