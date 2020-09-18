@@ -1,22 +1,7 @@
-# source : https://pythonbasics.org/what-is-flask-python/
-
 from flask import Flask, render_template, redirect, url_for, request
-import pandas as pd
-import joblib
-import numpy as np
-import pickle
-from scipy import spatial
-import spacy
-import nltk
-from nltk.corpus import stopwords
 from help_functions import *
-import en_core_web_sm
 
 app = Flask(__name__)
-
-nlp = en_core_web_sm.load()
-emoji_symb2emb_dic = joblib.load('avg_glove_embedding.pkl')
-glove_lookup = joblib.load('glove_lookup')
 
 @app.route('/', methods = ['POST', 'GET'])
 def index():
