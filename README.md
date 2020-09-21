@@ -1,4 +1,6 @@
-# Deeplexia_app
+# Deeplexia
+
+https://www.deeplexia.com/
 
 ## Motivation
 
